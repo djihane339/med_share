@@ -1,0 +1,59 @@
+:root { 
+    --main-color: #27ae60; 
+    --secondary-color: #2ecc71; 
+    --dark-bg: #2c3e50; 
+}
+
+body { 
+    font-family: 'Segoe UI', Tahoma, sans-serif; 
+    background-color: #f0f3f5; 
+    margin: 0; 
+    overflow-x: hidden; 
+}
+
+/* واجهة الترحيب */
+.hero { 
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=1350&q=80');
+    background-size: cover; 
+    background-position: center; 
+    height: 50vh;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+    color: white; 
+    text-align: center; 
+    padding: 20px;
+}
+
+.hero h1 { font-size: 2.5rem; margin-bottom: 10px; }
+
+/* البحث */
+.search-container { transform: translateY(-30px); text-align: center; }
+#myInput { 
+    width: 80%; max-width: 600px; padding: 15px 25px; 
+    border: none; border-radius: 50px; box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    font-size: 17px; outline: none;
+}
+
+/* البطاقات */
+.container { max-width: 1200px; margin: 20px auto; padding: 20px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 25px; }
+
+.card { 
+    background: white; border-radius: 15px; overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05); transition: 0.4s;
+    opacity: 0; transform: translateY(30px); 
+}
+
+.card.show { opacity: 1; transform: translateY(0); }
+
+.card:hover { transform: translateY(-10px); box-shadow: 0 15px 30px rgba(0,0,0,0.1); }
+
+.card-header { background: var(--main-color); color: white; padding: 12px; font-weight: bold; text-align: center; }
+.card-body { padding: 20px; text-align: center; }
+.badge { background: #e8f5e9; color: var(--main-color); padding: 5px 12px; border-radius: 20px; font-size: 12px; font-weight: bold; }
+
+.admin-tools { border-top: 1px solid #eee; padding: 15px; display: flex; justify-content: space-around; background: #fafafa; }
+.edit-link { color: #3498db; text-decoration: none; font-weight: bold; }
+.delete-link { color: #e74c3c; text-decoration: none; font-weight: bold; }
