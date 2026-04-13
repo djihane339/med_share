@@ -45,5 +45,11 @@
         </div>
     </div>
     <script src="script.js"></script>
+    <footer style="margin-top: 50px; padding: 20px; background: #e9ecef; text-align: center; border-top: 3px solid #28a745; font-family: Arial, sans-serif;">
+    <h3 style="color: #28a745; margin-bottom: 10px;">Contact Support / تواصل معنا</h3>
+    <p>Email: <strong>support@teryaq.dz</strong> | Phone: <strong>+213 555 00 11 22</strong></p>
+    <p style="font-size: 12px; color: #777;">&copy; 2026 Teryaq Project - Medicine Sharing Platform</p>
+</footer>
+</body> </html>
 </body>
 </html>
